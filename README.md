@@ -64,7 +64,23 @@ go mod tidy
 
 - variáveis do tipo *char* retornam o código ASCII do caractere;
 
-- valor zero: utilizado para variáveis inicilizadas sem valor.
+- valor zero: utilizado para variáveis inicilizadas sem valor;
+
+- no Go podemos retornar mais de um tipo em uma função, exemplo de uma função que retornaria dois tipos de valores:
+
+```
+func exemplo(parametro1, parametro2 [tipo]) (tipo, tipo) {}
+
+variavel1, variavel2 := exemplo(parametro1, parametro2)
+```
+
+Se for precisar de apenas um dos resultados de uma função que retorna múltiplos valores, deve-se usar o *_*:
+
+```
+func exemplo(parametro1, parametro2 [tipo]) (tipo, tipo) {}
+
+variavel1, _ := exemplo(parametro1, parametro2)
+```
 
 ## Utilização
 
