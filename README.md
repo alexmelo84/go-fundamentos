@@ -82,6 +82,15 @@ func exemplo(parametro1, parametro2 [tipo]) (tipo, tipo) {}
 variavel1, _ := exemplo(parametro1, parametro2)
 ```
 
+- no Go não é possível fazer operações em variáveis de tipos diferentes, exemplo que dará erro:
+
+```
+var numero1 int8 = 10
+var numero1 int16 = 29
+soma := numero1 + numero2
+fmt.Println(soma)
+```
+
 ## Utilização
 
 Cada diretório equivale a 1 conceito diferente.
