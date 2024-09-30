@@ -10,7 +10,7 @@ Estudo do Golang pelo [curso](https://www.udemy.com/course/aprenda-golang-do-zer
 package main
 ```
 
-Através disso o Go saberá por onde começar a executar a aplicação.
+Através disso o Go saberá por onde começar a executar a aplicação;
 
 - pacotes auxiliares terão seu próprio nome:
 
@@ -32,11 +32,11 @@ go mod init [moduleName]
 
 - nos pacotes auxiliares, o nome da *func* deve ser escrito com letra inicial maiúscula, só assim ela poderá ser importada no pacote *main*.
 
-Exemplo disso está no módulo *1-Pacotes*, em que no módulo *auxiliar* há o pacote *auxiliar1* há a função *Escrever* e que é executada dentro do pacote *main.go*.
+Exemplo disso está no módulo *1-Pacotes*, em que no módulo *auxiliar* há o pacote *auxiliar1* há a função *Escrever* e que é executada dentro do pacote *main.go*;
 
 - nos pacotes auxiliares, quando uma função é iniciada com letra minúscula, ela só pode ser executada dentro do próprio pacote.
 
-Exemplo é no módulo *1-Pacotes*, onde o módulo *auxiliar* tem o pacote *auxiliar2* há a função *escrever2*. Essa função não pode ser executada no pacote principal (*main.go*), só podendo ser executada no pacote *auxiliar1*.
+Exemplo é no módulo *1-Pacotes*, onde o módulo *auxiliar* tem o pacote *auxiliar2* há a função *escrever2*. Essa função não pode ser executada no pacote principal (*main.go*), só podendo ser executada no pacote *auxiliar1*;
 
 - para executar funções de pacotes, deve-se usar o texto que fica após a última */*, por exemplo, um pacote chamado *pacote/exemplo* deve ser executado como *exemplo.funcao1()*;
 
@@ -57,6 +57,14 @@ go get github.com/badoux/checkmail
 ```
 go mod tidy
 ```
+
+- Go trabalha com 4 tipos de números inteiros: int8, int16, int32, int64. Se omitir o tipo de inteiro na inicialização da variável, o Go considerará a arquitetura do processador para inferir o tipo de inteiro;
+
+- tipos inteiros também podem receber números negativos;
+
+- variáveis do tipo *char* retornam o código ASCII do caractere;
+
+- valor zero: utilizado para variáveis inicilizadas sem valor.
 
 ## Utilização
 
