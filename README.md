@@ -38,6 +38,26 @@ Exemplo disso está no módulo *1-Pacotes*, em que no módulo *auxiliar* há o p
 
 Exemplo é no módulo *1-Pacotes*, onde o módulo *auxiliar* tem o pacote *auxiliar2* há a função *escrever2*. Essa função não pode ser executada no pacote principal (*main.go*), só podendo ser executada no pacote *auxiliar1*.
 
+- para executar funções de pacotes, deve-se usar o texto que fica após a última */*, por exemplo, um pacote chamado *pacote/exemplo* deve ser executado como *exemplo.funcao1()*;
+
+- utlização de pacotes externos: precisam ser instalados com o comando:
+
+```
+go get [url]
+```
+
+Por exemplo:
+
+```
+go get github.com/badoux/checkmail
+```
+
+- quando remove algum pacote, deve-se rodar o comando abaixo para limpar o projeto:
+
+```
+go mod tidy
+```
+
 ## Utilização
 
 Cada diretório equivale a 1 conceito diferente.
