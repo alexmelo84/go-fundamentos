@@ -91,6 +91,23 @@ soma := numero1 + numero2
 fmt.Println(soma)
 ```
 
+- no Go não tem herança, mas pode-se simular isso passando um tipo de struct dentro de outro struct, exemplo com o tipo *pessoa* em *estudante*:
+
+```
+type pessoa struct {
+	nome string
+	sobrenome string
+	idade uint8
+	altura uint8
+}
+
+type estudante struct {
+	pessoa
+	curso string
+	campus string
+}
+```
+
 ## Utilização
 
 Cada diretório equivale a 1 conceito diferente.
