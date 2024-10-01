@@ -108,6 +108,18 @@ type estudante struct {
 }
 ```
 
+- para utilizar ponteiros, deve adicionar um * antes do tipo da variável, exemplo:
+
+```
+var variavel1 int
+var ponteiro1 *int
+variavel1 = 20
+ponteiro1 = &variavel1
+fmt.Println(variavel3, ponteiro1, *ponteiro1)
+```
+
+Quando lemos apenas o nome do ponteiro (nesse exemplo é o *ponteiro1*) pegamos apenas a posição de memória. Se quisermos pegar o valor do ponteiro, adiciona-se o * para desreferenciar o ponteiro (nesse exemplo é **ponteiro1*).
+
 ## Utilização
 
 Cada diretório equivale a 1 conceito diferente.
