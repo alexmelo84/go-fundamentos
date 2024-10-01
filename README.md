@@ -118,7 +118,9 @@ ponteiro1 = &variavel1
 fmt.Println(variavel3, ponteiro1, *ponteiro1)
 ```
 
-Quando lemos apenas o nome do ponteiro (nesse exemplo é o *ponteiro1*) pegamos apenas a posição de memória. Se quisermos pegar o valor do ponteiro, adiciona-se o * para desreferenciar o ponteiro (nesse exemplo é **ponteiro1*).
+Quando lemos apenas o nome do ponteiro (nesse exemplo é o *ponteiro1*) pegamos apenas a posição de memória. Se quisermos pegar o valor do ponteiro, adiciona-se o * para desreferenciar o ponteiro (nesse exemplo é **ponteiro1*);
+
+- quando criamos um *slice* utilizando o *make*, ao estourarmos a capacidade máxima, o Go vai dobrar o tamanho original do *slice*.
 
 ## Utilização
 
