@@ -131,6 +131,13 @@ for _, nome := range nomes {
 }
 ```
 
+- para rodar a aplicação de linha de comando, execute o comando:
+
+```
+./linha-de-comando ip --host instagram.com
+./linha-de-comando servidores --host instagram.com
+```
+
 ## Utilização
 
 Cada diretório equivale a 1 conceito diferente.
