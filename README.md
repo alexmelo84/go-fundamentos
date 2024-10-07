@@ -138,6 +138,56 @@ for _, nome := range nomes {
 ./linha-de-comando servidores --host instagram.com
 ```
 
+- rodar todos os testes do pacote, ao invés de entrar em cada módulo do pacote:
+
+```
+go test ./...
+```
+
+- rodar teste no modo verboso:
+
+```
+go test -v
+```
+
+- para rodar as funções teste em paralelo, adicione *t.Parallel()* em cada função, exemplo:
+
+```
+func TestFuncao1() {
+	t.Parallel()
+	...
+}
+
+func TestFuncao2() {
+	t.Parallel()
+	...
+}
+```
+
+- para exibir o percentual de cobertura do teste, execute:
+
+```
+go test --cover
+```
+
+- gerar relatório em *txt* do resultado do teste:
+
+```
+go test --coverprofile cobertura.txt
+```
+
+- para ler o arquivo *txt* da cobertura de testes:
+
+```
+go tool cover --func=cobertura.txt
+```
+
+- para ver o arquivo *txt* do cobertura de testes em HTML:
+
+```
+go tool cover --html=cobertura.txt
+```
+
 ## Utilização
 
 Cada diretório equivale a 1 conceito diferente.
