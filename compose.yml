@@ -5,6 +5,8 @@ services:
     restart: on-failure
     tty: true
     build: .
+    ports:
+      - 5000:5000
     working_dir: /usr/src/app
     volumes:
       - go-fundamentos-volume:/usr/src/app/
