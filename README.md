@@ -188,6 +188,14 @@ go tool cover --func=cobertura.txt
 go tool cover --html=cobertura.txt
 ```
 
+- importação implícita: deve-se importar usando o *_* antes do nome do pacote:
+
+```
+import (
+	_"github.com/go-sql-driver/mysql"
+)
+```
+
 ## Utilização
 
 Cada diretório equivale a 1 conceito diferente.
@@ -220,4 +228,16 @@ go run [filename].go
 ```
 go build
 ./[executavel]
+```
+
+- acesso ao banco de dados: é criada uma imagem MySQL com o nome *go-db* sem usuário padrão, então acessa-se com o *root*:
+
+```
+docker exec -it go-db /bin/bash
+```
+
+E dentro da imagem:
+
+```
+mysql -uroot -p"123456"
 ```
